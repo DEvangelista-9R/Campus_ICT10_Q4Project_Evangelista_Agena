@@ -1,0 +1,129 @@
+body {
+    background: linear-gradient(135deg, #f5edff, #ede9fe);
+    font-family: Arial, sans-serif;
+    color: #3b0764;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: rgba(124, 58, 237, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 14px 22px;
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.18);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 14px;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    opacity: 0.9;
+}
+
+.btn-tab {
+    background: white;
+    color: #7c3aed;
+    border: none;
+    border-radius: 14px;
+    padding: 9px 18px;
+    margin: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 10px rgba(124, 58, 237, 0.08);
+}
+
+.btn-tab:hover {
+    background: #7c3aed;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(124, 58, 237, 0.2);
+}
+
+.card {
+    background: rgba(255,255,255,0.85);
+    border: 1px solid rgba(124, 58, 237, 0.08);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.08);
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(124, 58, 237, 0.14);
+}
+
+img {
+    border-radius: 14px;
+    transition: 0.25s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+h1, h5, h6 {
+    color: #4c1d95;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    border-radius: 12px !important;
+    border: 1px solid #d8b4fe !important;
+    padding: 10px !important;
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #7c3aed !important;
+    box-shadow: 0 0 0 0.18rem rgba(124, 58, 237, 0.15) !important;
+    transform: scale(1.01);
+}
+
+button {
+    border-radius: 12px !important;
+    border: none !important;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a855f7;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed;
+}
