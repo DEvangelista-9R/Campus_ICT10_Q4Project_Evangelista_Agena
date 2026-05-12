@@ -89,7 +89,7 @@ def draw_graph():
 
     plt.xticks(x, days)
 
-    plt.ylim(0)
+    plt.ylim(0,5)
 
     plt.grid(axis="y", linestyle="--", alpha=0.3)
 
@@ -117,7 +117,7 @@ def submit_data(*args):
 
     index = days.index(day)
 
-    absences[index] = min(value, 5)
+    absences[index] = min(value)
 
     value_input = document.getElementById("value")
 
