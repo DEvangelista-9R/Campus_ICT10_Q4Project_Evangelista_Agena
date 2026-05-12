@@ -89,7 +89,7 @@ def draw_graph():
 
     plt.xticks(x, days)
 
-    plt.ylim(0, 5)
+    plt.ylim(0)
 
     plt.grid(axis="y", linestyle="--", alpha=0.3)
 
